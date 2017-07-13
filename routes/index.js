@@ -1,5 +1,8 @@
 var express = require('express');
-var router = express.Router();
+var router  = express.Router();
+var path    = require('path');
+
+var calendarController = require(path.resolve(__dirname, 'calendar-controller'));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -7,28 +10,26 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/bootstrap', function(req, res, next) {
-  res.render('index', { 
+  res.render('bootstrap', { 
   	title: 'Express',
   	bootstrap: true 
   });
 });
 
 router.get('/jquery', function(req, res, next) {
-  res.render('index', { 
+  res.render('jquery-ui', { 
   	title: 'Express',
   	'jquery-ui': true 
   });
 });
 
 router.get('/gcal', function(req, res, next) {
-  res.render('index', { 
+  res.render('google-calendar', { 
   	title: 'Express',
   	'google-calendar': true 
   });
 });
 
-router.get('/calendarJSON', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+router.get('/calendarJSON', calendarController.calendarJSON);
 
 module.exports = router;
