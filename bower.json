@@ -1,0 +1,15 @@
+{
+  "name": "fullcalendar-node",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Arthur Tkachenko <arthur.tkachenko.netweight@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/atherdon/fullcalendar-node2",
+  "dependencies": {
+    "fullcalendar": "^3.4.0",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}
