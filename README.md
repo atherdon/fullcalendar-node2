@@ -13,3 +13,7 @@ https://fullcalendar.io/js/fullcalendar-3.4.0/demos/external-dragging.html
 https://fullcalendar.io/js/fullcalendar-3.4.0/demos/list-views.html
 
 http://localhost:3000/
+
+
+heroku config:set GOOGLE_CALENDAR_API_KEY='your_secret';
+heroku config:set GOOGLE_CALENDAR_ID='test_example'
