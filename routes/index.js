@@ -17,16 +17,19 @@ router.get('/bootstrap', function(req, res, next) {
 });
 
 router.get('/jquery', function(req, res, next) {
-  res.render('jquery-ui', { 
+  res.render('jqueryui', { 
   	title: 'Express',
-  	'jquery-ui': true 
+  	'jqueryui': true 
   });
 });
 
 router.get('/gcal', function(req, res, next) {
   res.render('google-calendar', { 
   	title: 'Express',
-  	'google-calendar': true 
+  	'googleCalendar': true,
+  	
+  	GOOGLE_KEY: process.env.GOOGLE_CALENDAR_API_KEY,
+  	GOOGLE_CLIENT: process.env.GOOGLE_CALENDAR_CLIENT_ID 
   });
 });
 
