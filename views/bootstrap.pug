@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  .row
+    .col-xs-12
+      h1 FullCalendar with Bootstrap Modal
+      p
+        | From the article 
+        a(href='http://www.mikesmithdev.com/blog/fullcalendar-event-details-with-bootstrap-modal/', target='_blank') Extend FullCalendar Events with Bootstrap Modal
+      br
+      br
+      #bootstrapModalFullCalendar
+      
+  // Modal Code from the Bootstrap examples
+  #fullCalModal.modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal')
+            span(aria-hidden='true') ×
+            span.sr-only close
+          h4#modalTitle.modal-title
+        #modalBody.modal-body
+        .modal-footer
+          button.btn.btn-default(type='button', data-dismiss='modal') Close
+          a#eventUrl.btn.btn-primary(target='_blank') Event Page
+

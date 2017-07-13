@@ -3,3 +3,18 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+  .row
+    .col-xs-12
+      h1 FullCalendar Demos
+      br
+  .row
+    .col-xs-12.col-sm-4
+      p
+        a.btn.btn-primary.btn-lg(href='/bootstrap/', role='button') Bootstrap Modal
+    .col-xs-12.col-sm-4
+      p
+        a.btn.btn-primary.btn-lg(href='/jquery/', role='button') jQuery UI Modal
+    .col-xs-12.col-sm-4
+      p
+        a.btn.btn-primary.btn-lg(href='/gcal/', role='button') gCal.js w/ Bootstrap Modal
