@@ -7,15 +7,24 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/bootstrap', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { 
+  	title: 'Express',
+  	bootstrap: true 
+  });
 });
 
 router.get('/jquery', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { 
+  	title: 'Express',
+  	'jquery-ui': true 
+  });
 });
 
 router.get('/gcal', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { 
+  	title: 'Express',
+  	'google-calendar': true 
+  });
 });
 
 router.get('/calendarJSON', function(req, res, next) {

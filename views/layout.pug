@@ -23,3 +23,13 @@ html
     block content
 
     include scripts
+
+
+    if bootstrap
+      include partials/scripts-fullcalendar
+
+    if google-calendar
+      include partials/scripts-google-calendar
+
+    if jquery-ui
+      include partials/scripts-jquery-ui     
