@@ -216,6 +216,7 @@
           title: $this.data('title'),
           stick: $this.data('stick'),
           backgroundColor: $.colors(color[0], color[1]),
+          
           borderColor: $.colors(color[0], color[1])
         });
         $this.draggable({
@@ -242,7 +243,7 @@
       this.handleEventList();
       this.handleFullcalendar();
       // this.handleAction();
-      this.handleSelective();
+      // this.handleSelective();
 
       next();
     }
