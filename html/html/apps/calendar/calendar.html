@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>
+
+  </title>
+
+  
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../assets/css/bootstrap-extend.min.css">
+  <link rel="stylesheet" href="../../../assets/css/site.min.css">
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="../../../assets/vendor/animsition/animsition.css">
+  <link rel="stylesheet" href="../../../assets/vendor/asscrollable/asScrollable.css">
+  <link rel="stylesheet" href="../../../assets/vendor/switchery/switchery.css">
+  <link rel="stylesheet" href="../../../assets/vendor/intro-js/introjs.css">
+  <link rel="stylesheet" href="../../../assets/vendor/slidepanel/slidePanel.css">
+  <link rel="stylesheet" href="../../../assets/vendor/flag-icon-css/flag-icon.css">
+
+  <!-- Plugins For This Page -->
+  <link rel="stylesheet" href="../../../assets/vendor/fullcalendar/fullcalendar.css">
+  <link rel="stylesheet" href="../../../assets/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="../../../assets/vendor/bootstrap-touchspin/bootstrap-touchspin.css">
+  <link rel="stylesheet" href="../../../assets/vendor/jquery-selective/jquery-selective.css">
+
+  <!-- Page -->
+  <link rel="stylesheet" href="../../../assets/examples/css/apps/calendar.css">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="../../../assets/fonts/web-icons/web-icons.min.css">
+  <link rel="stylesheet" href="../../../assets/fonts/brand-icons/brand-icons.min.css">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic'>
+
+  <!--[if lt IE 9]>
+    <script src="../../../assets/vendor/html5shiv/html5shiv.min.js"></script>
+    <![endif]-->
+
+  <!-- Scripts -->
+  
+  <script src="../../../assets/vendor/breakpoints/breakpoints.js"></script>
+  <script>
+    Breakpoints();
+  </script>
+</head>
+<body>
+
+
+
+  <div class="page animsition">
+    <div class="page-aside">
+      <div class="page-aside-switch">
+        <i class="icon wb-chevron-left" aria-hidden="true"></i>
+        <i class="icon wb-chevron-right" aria-hidden="true"></i>
+      </div>
+      <div class="page-aside-inner">
+        <section class="page-aside-section">
+          <h5 class="page-aside-title">CALENDAR LIST</h5>
+          <div class="list-group has-actions">
+            <div class="list-group-item">
+              <div class="list-content">
+                <span class="item-right">10</span>
+                <span class="list-text">Admin Calendar</span>
+                <div class="item-actions">
+                  <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
+                  <span class="btn btn-pure btn-icon"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="list-editable">
+                <div class="form-group form-material">
+                  <input type="text" class="form-control empty" name="label" data-bind=".list-text"
+                  value="Admin Calendar">
+                  <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close"
+                  aria-label="Close" aria-expanded="true"></button>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="list-content">
+                <span class="item-right">5</span>
+                <span class="list-text">Home Calendar</span>
+                <div class="item-actions">
+                  <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
+                  <span class="btn btn-pure btn-icon"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="list-editable">
+                <div class="form-group form-material">
+                  <input type="text" class="form-control empty" name="label" data-bind=".list-text"
+                  value="Home Calendar">
+                  <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close"
+                  aria-label="Close" aria-expanded="true"></button>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="list-content">
+                <span class="item-right">16</span>
+                <span class="list-text">Work Calendar</span>
+                <div class="item-actions">
+                  <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
+                  <span class="btn btn-pure btn-icon"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="list-editable">
+                <div class="form-group form-material">
+                  <input type="text" class="form-control empty" name="label" data-bind=".list-text"
+                  value="Work Calendar">
+                  <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close"
+                  aria-label="Close" aria-expanded="true"></button>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="list-content">
+                <span class="item-right">30</span>
+                <span class="list-text">Calendar One</span>
+                <div class="item-actions">
+                  <span class="btn btn-pure btn-icon" data-toggle="list-editable"><i class="icon wb-edit" aria-hidden="true"></i></span>
+                  <span class="btn btn-pure btn-icon"><i class="icon wb-trash" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="list-editable">
+                <div class="form-group form-material">
+                  <input type="text" class="form-control empty" name="label" data-bind=".list-text"
+                  value="Calendar One">
+                  <button type="button" class="input-editable-close icon wb-close" data-toggle="list-editable-close"
+                  aria-label="Close" aria-expanded="true"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-aside-section">
+          <h5 class="page-aside-title">EVENTS</h5>
+          <div class="list-group calendar-list">
+            <a class="list-group-item calendar-event" data-title="Meeting" data-stick=true
+            data-color="red-600" href="javascript:void(0)">
+              <i class="wb-medium-point red-600 margin-right-10" aria-hidden="true"></i>Meeting
+            </a>
+            <a class="list-group-item calendar-event" data-title="Birthday Party" data-stick=true
+            data-color="green-600" href="javascript:void(0)">
+              <i class="wb-medium-point green-600 margin-right-10" aria-hidden="true"></i>Birthday
+              Party
+            </a>
+            <a class="list-group-item calendar-event" data-title="Call Jimba" data-stick=true
+            data-color="orange-600" href="javascript:void(0)">
+              <i class="wb-medium-point orange-600 margin-right-10" aria-hidden="true"></i>Call
+              Jimba
+            </a>
+            <a class="list-group-item calendar-event" data-title="Dinner with Team" data-stick=true
+            data-color="cyan-600" href="javascript:void(0)">
+              <i class="wb-medium-point cyan-600 margin-right-10" aria-hidden="true"></i>Dinner
+              with Team
+            </a>
+            <a id="addNewEventBtn" class="list-group-item" href="javascript:void(0)"> <i class="icon wb-plus" aria-hidden="true"></i> Add New Event </a>
+          </div>
+        </section>
+
+      </div>
+    </div>
+    <div class="page-main">
+      <div class="page-header">
+        <h1 class="page-title">Calendar</h1>
+      </div>
+      <div class="page-content calendar-container padding-horizontal-30 container-fluid">
+        <div class="panel">
+          <div class="padding-30" id="calendar"></div>
+        </div>
+
+        <!--AddEvent Dialog -->
+        <div class="modal fade" id="addNewEvent" aria-hidden="true" aria-labelledby="addNewEvent"
+        role="dialog" tabindex="-1">
+          <div class="modal-dialog">
+            <form class="modal-content form-horizontal" action="#" method="post" role="form">
+              <div class="modal-header">
+                <button type="button" class="close" aria-hidden="true" data-dismiss="modal">×</button>
+                <h4 class="modal-title">New Event</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="ename">Name:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="ename" name="ename">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="starts">Starts:</label>
+                  <div class="col-sm-10">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="starts" data-container="#addNewEvent"
+                      data-plugin="datepicker">
+                      <span class="input-group-addon">
+                        <i class="icon wb-calendar" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="ends">Ends:</label>
+                  <div class="col-sm-10">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="ends" data-container="#addNewEvent"
+                      data-plugin="datepicker">
+                      <span class="input-group-addon">
+                        <i class="icon wb-calendar" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="repeats">Repeats:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="repeats" name="repeats" data-plugin="TouchSpin"
+                    data-min="0" data-max="10" value="0" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2">Color:</label>
+                  <div class="col-sm-10">
+                    <ul class="color-selector">
+                      <li class="bg-blue-600">
+                        <input type="radio" checked name="colorChosen" id="colorChosen2">
+                        <label for="colorChosen2"></label>
+                      </li>
+                      <li class="bg-green-600">
+                        <input type="radio" name="colorChosen" id="colorChosen3">
+                        <label for="colorChosen3"></label>
+                      </li>
+                      <li class="bg-cyan-600">
+                        <input type="radio" name="colorChosen" id="colorChosen4">
+                        <label for="colorChosen4"></label>
+                      </li>
+                      <li class="bg-orange-600">
+                        <input type="radio" name="colorChosen" id="colorChosen5">
+                        <label for="colorChosen5"></label>
+                      </li>
+                      <li class="bg-red-600">
+                        <input type="radio" name="colorChosen" id="colorChosen6">
+                        <label for="colorChosen6"></label>
+                      </li>
+                      <li class="bg-blue-grey-600">
+                        <input type="radio" name="colorChosen" id="colorChosen7">
+                        <label for="colorChosen7"></label>
+                      </li>
+                      <li class="bg-purple-600">
+                        <input type="radio" name="colorChosen" id="colorChosen8">
+                        <label for="colorChosen8"></label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="people">People:</label>
+                  <div class="col-sm-10">
+                    <select id="people" multiple="multiple" data-plugin="jquery-selective"></select>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="form-actions">
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">Add this event</button>
+                  <a class="btn btn-sm btn-white" data-dismiss="modal" href="javascript:void(0)">Cancel</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End AddEvent Dialog -->
+
+        <!-- Edit Dialog -->
+        <div class="modal fade" id="editNewEvent" aria-hidden="true" aria-labelledby="editNewEvent"
+        role="dialog" tabindex="-1" data-show="false">
+          <div class="modal-dialog">
+            <form class="modal-content form-horizontal" action="#" method="post" role="form">
+              <div class="modal-header">
+                <button type="button" class="close" aria-hidden="true" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Edit Event</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="editEname">Name:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="editEname" name="editEname">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="editStarts">Starts:</label>
+                  <div class="col-sm-10">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="editStarts" name="editStarts" data-container="#editNewEvent"
+                      data-plugin="datepicker">
+                      <span class="input-group-addon">
+                        <i class="icon wb-calendar" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="editEnds">Ends:</label>
+                  <div class="col-sm-10">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="editEnds" data-container="#editNewEvent"
+                      data-plugin="datepicker">
+                      <span class="input-group-addon">
+                        <i class="icon wb-calendar" aria-hidden="true"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="editRepeats">Repeats:</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="editRepeats" name="repeats" data-plugin="TouchSpin"
+                    data-min="0" data-max="10" value="0" />
+                  </div>
+                </div>
+                <div class="form-group" id="editColor">
+                  <label class="control-label col-sm-2">Color:</label>
+                  <div class="col-sm-10">
+                    <ul class="color-selector">
+                      <li class="bg-blue-600">
+                        <input type="radio" data-color="blue|600" name="colorChosen" id="editColorChosen2">
+                        <label for="editColorChosen2"></label>
+                      </li>
+                      <li class="bg-green-600">
+                        <input type="radio" data-color="green|600" name="colorChosen" id="editColorChosen3">
+                        <label for="editColorChosen3"></label>
+                      </li>
+                      <li class="bg-cyan-600">
+                        <input type="radio" data-color="cyan|600" name="colorChosen" id="editColorChosen4">
+                        <label for="editColorChosen4"></label>
+                      </li>
+                      <li class="bg-orange-600">
+                        <input type="radio" data-color="orange|600" name="colorChosen" id="editColorChosen5">
+                        <label for="editColorChosen4"></label>
+                      </li>
+                      <li class="bg-red-600">
+                        <input type="radio" data-color="red|600" name="colorChosen" id="editColorChosen6">
+                        <label for="editColorChosen6"></label>
+                      </li>
+                      <li class="bg-blue-grey-600">
+                        <input type="radio" data-color="blue-grey|600" name="colorChosen" id="editColorChosen7">
+                        <label for="editColorChosen7"></label>
+                      </li>
+                      <li class="bg-purple-600">
+                        <input type="radio" data-color="purple|600" name="colorChosen" id="editColorChosen8">
+                        <label for="editColorChosen8"></label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label" for="editPeople">People:</label>
+                  <div class="col-sm-10">
+                    <select id="editPeople" multiple="multiple" data-plugin="jquery-selective"></select>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="form-actions">
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">Save</button>
+                  <button class="btn btn-danger" data-dismiss="modal" type="button">Delete</button>
+                  <a class="btn btn-sm btn-white" data-dismiss="modal" href="javascript:void(0)">Cancel</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End EditEvent Dialog -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Add Calendar Form -->
+  <div class="modal fade" id="addNewCalendarForm" aria-hidden="true" aria-labelledby="addNewCalendarForm"
+  role="dialog" tabindex="-1">
+    <div class="modal-dialog">
+      <form class="modal-content" action="#" method="post" role="form">
+        <div class="modal-header">
+          <button type="button" class="close" aria-hidden="true" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Create New Calendar</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="control-label margin-bottom-15" for="name">Calendar name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Calendar name">
+          </div>
+          <div class="form-group">
+            <label class="control-label margin-bottom-15" for="name">Choice people to your project:</label>
+            <select multiple="multiple" data-plugin="jquery-selective"></select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="form-actions">
+            <button class="btn btn-primary" data-dismiss="modal" type="button">Create</button>
+            <a class="btn btn-sm btn-white" data-dismiss="modal" href="javascript:void(0)">Cancel</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- End Add Calendar Form -->
+
+
+ 
+
+  <!-- Core  -->
+  <script src="../../../assets/vendor/jquery/jquery.js"></script>
+  <script src="../../../assets/vendor/bootstrap/bootstrap.js"></script>
+  <script src="../../../assets/vendor/animsition/jquery.animsition.js"></script>
+  <script src="../../../assets/vendor/asscroll/jquery-asScroll.js"></script>
+  <script src="../../../assets/vendor/mousewheel/jquery.mousewheel.js"></script>
+  <script src="../../../assets/vendor/asscrollable/jquery.asScrollable.all.js"></script>
+  <script src="../../../assets/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+
+  <!-- Plugins -->
+  <script src="../../../assets/vendor/switchery/switchery.min.js"></script>
+  <script src="../../../assets/vendor/intro-js/intro.js"></script>
+  <script src="../../../assets/vendor/screenfull/screenfull.js"></script>
+  <script src="../../../assets/vendor/slidepanel/jquery-slidePanel.js"></script>
+
+  <!-- Plugins For This Page -->
+  <script src="../../../assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../../../assets/vendor/moment/moment.min.js"></script>
+  <script src="../../../assets/vendor/fullcalendar/fullcalendar.js"></script>
+  <script src="../../../assets/vendor/jquery-selective/jquery-selective.min.js"></script>
+  <script src="../../../assets/vendor/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+  <script src="../../../assets/vendor/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+
+  <!-- Scripts -->
+  <script src="../../../assets/js/core.js"></script>
+  <script src="../../../assets/js/site.js"></script>
+<!-- 
+  <script src="../../../assets/js/sections/menu.js"></script>
+  <script src="../../../assets/js/sections/menubar.js"></script>
+  <script src="../../../assets/js/sections/gridmenu.js"></script>
+  <script src="../../../assets/js/sections/sidebar.js"></script> -->
+
+  <script src="../../../assets/js/configs/config-colors.js"></script>
+  <script src="../../../assets/js/configs/config-tour.js"></script>
+
+  <script src="../../../assets/js/components/asscrollable.js"></script>
+  <script src="../../../assets/js/components/animsition.js"></script>
+  <script src="../../../assets/js/components/slidepanel.js"></script>
+  <script src="../../../assets/js/components/switchery.js"></script>
+
+  <!-- Scripts For This Page -->
+  <script src="../../../assets/js/components/bootstrap-touchspin.js"></script>
+  <script src="../../../assets/js/components/bootstrap-datepicker.js"></script>
+  <script src="../../../assets/js/components/material.js"></script>
+  <script src="../../../assets/js/plugins/action-btn.js"></script>
+  <script src="../../../assets/js/app.js"></script>
+
+  <script src="../../../assets/examples/js/apps/calendar.js"></script>
+
+
+</body>
+
+</html>
