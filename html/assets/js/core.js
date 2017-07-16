@@ -77,50 +77,50 @@
       $el.trigger(name + '.site', data);
     },
 
-    throttle: function(func, wait) {
-      var _now = Date.now || function() {
-        return new Date().getTime();
-      };
-      var context, args, result;
-      var timeout = null;
-      var previous = 0;
+    // throttle: function(func, wait) {
+    //   var _now = Date.now || function() {
+    //     return new Date().getTime();
+    //   };
+    //   var context, args, result;
+    //   var timeout = null;
+    //   var previous = 0;
 
-      var later = function() {
-        previous = _now();
-        timeout = null;
-        result = func.apply(context, args);
-        context = args = null;
-      };
+    //   var later = function() {
+    //     previous = _now();
+    //     timeout = null;
+    //     result = func.apply(context, args);
+    //     context = args = null;
+    //   };
 
-      return function() {
-        var now = _now();
-        var remaining = wait - (now - previous);
-        context = this;
-        args = arguments;
-        if (remaining <= 0) {
-          clearTimeout(timeout);
-          timeout = null;
-          previous = now;
-          result = func.apply(context, args);
-          context = args = null;
-        } else if (!timeout) {
-          timeout = setTimeout(later, remaining);
-        }
-        return result;
-      };
-    },
+    //   return function() {
+    //     var now = _now();
+    //     var remaining = wait - (now - previous);
+    //     context = this;
+    //     args = arguments;
+    //     if (remaining <= 0) {
+    //       clearTimeout(timeout);
+    //       timeout = null;
+    //       previous = now;
+    //       result = func.apply(context, args);
+    //       context = args = null;
+    //     } else if (!timeout) {
+    //       timeout = setTimeout(later, remaining);
+    //     }
+    //     return result;
+    //   };
+    // },
 
-    resize: function() {
-      if (document.createEvent) {
-        var ev = document.createEvent('Event');
-        ev.initEvent('resize', true, true);
-        window.dispatchEvent(ev);
-      } else {
-        element = document.documentElement;
-        var event = document.createEventObject();
-        element.fireEvent("onresize", event);
-      }
-    }
+    // resize: function() {
+    //   if (document.createEvent) {
+    //     var ev = document.createEvent('Event');
+    //     ev.initEvent('resize', true, true);
+    //     window.dispatchEvent(ev);
+    //   } else {
+    //     element = document.documentElement;
+    //     var event = document.createEventObject();
+    //     element.fireEvent("onresize", event);
+    //   }
+    // }
   });
 
   // Configs
