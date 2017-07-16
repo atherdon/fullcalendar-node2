@@ -18,16 +18,11 @@
   window.Site = $.site.extend({
     run: function(next) {
     
-
-      
         next();
      
-      // Init Loaded Components
-      // ======================
       $.components.init();
 
-      // this.startTour();
-    },
+    }
 
 
   });
