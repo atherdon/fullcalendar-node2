@@ -19,10 +19,13 @@ http://localhost:3000/
 ### Configuration
 ---
 ### How to install on Heroku
-
+```
 heroku config:set GOOGLE_CALENDAR_API_KEY='your_secret';
 heroku config:set GOOGLE_CALENDAR_ID='test_example'
+```
+
 ---
+
 Deploy to Heroku button
 
 
