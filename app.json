@@ -1,0 +1,7 @@
+{
+  "name": "FullCallendar.io Example",
+  "description": "Simple application, using Nodejs, Express ",
+  "repository": "https://github.com/atherdon/fullcalendar-node2/",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["node", "express", "fullcalendar"]
+}
