@@ -3,11 +3,14 @@
  * Copyright 2015 amazingsurge
  * Licensed under the Themeforest Standard Licenses
  */
+
+
 (function(document, window, $) {
   'use strict';
 
   window.AppCalendar = App.extend({
     handleFullcalendar: function() {
+
       var my_events = [{
         title: 'All Day Event',
         start: '2015-10-01'
@@ -47,6 +50,8 @@
         title: 'Birthday Party',
         start: '2015-10-13T07:00:00'
       }];
+
+
       var my_options = {
         header: {
           left: null,
@@ -120,6 +125,8 @@
         droppable: true
       };
 
+
+
       var _options;
       var my_options_mobile = $.extend({}, my_options);
 
@@ -131,6 +138,7 @@
     },
 
     handleSelective: function() {
+
       var member = [{
         id: 'uid_1',
         name: 'Herman Beck',
@@ -158,6 +166,7 @@
         name: 'Caleb Richards',
         avatar: '../../../assets/portraits/2.jpg'
       }];
+      
 
       $('[data-plugin="jquery-selective"]').selective({
         namespace: 'addMember',
