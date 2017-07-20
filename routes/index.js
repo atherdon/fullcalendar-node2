@@ -37,4 +37,9 @@ router.get('/gcal', function(req, res, next) {
 
 router.get('/calendarJSON', calendarController.calendarJSON);
 
+router.get('/new', function(req, res, next){
+  res.render('index1', {});
+  
+})
+
 module.exports = router;
