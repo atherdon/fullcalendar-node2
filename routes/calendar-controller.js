@@ -2,7 +2,8 @@ var moment = require('moment');
 
 /* Randomize some events for the JSON feed */
 exports.calendarJSON = function(req, res){ 
-	var e1 = ['Hackathon','Pizza Break','Coder Meeting','Staff Meeting','Poker Night','Beer Garden','Gaming Tourney','MMORPG Fest','Staff Meeting','Poker Night','Hackathon','Beta Testing','Pub Crawl'];
+	var e1 = ['Hackathon','Pizza Break','Coder Meeting','Staff Meeting','Poker Night','Beer Garden','Gaming Tourney',
+    'MMORPG Fest','Staff Meeting','Poker Night','Hackathon','Beta Testing','Pub Crawl'];
 	var e2 = ['ASP.NET Meetup','Perl Meetup','Node.js Meetup','Javascript Meetup','HTML Meetup','CSS Meetup','ASP.NET Meetup']
 	var events = [];
 
