@@ -4,17 +4,43 @@ block content
   h1= title
   p Welcome to #{title}
 
-  .row
-    .col-xs-12
-      h1 FullCalendar Demos
-      br
-  .row
-    .col-xs-12.col-sm-4
-      p
-        a.btn.btn-primary.btn-lg(href='/bootstrap/', role='button') Bootstrap Modal
-    .col-xs-12.col-sm-4
-      p
-        a.btn.btn-primary.btn-lg(href='/jquery/', role='button') jQuery UI Modal
-    .col-xs-12.col-sm-4
-      p
-        a.btn.btn-primary.btn-lg(href='/gcal/', role='button') gCal.js w/ Bootstrap Modal
+  .page.animsition
+    .page-aside
+      .page-aside-switch
+        i.icon.wb-chevron-left(aria-hidden='true')
+        i.icon.wb-chevron-right(aria-hidden='true')
+      .page-aside-inner
+        section.page-aside-section
+          h5.page-aside-title EVENTS
+          .list-group.calendar-list
+            a.list-group-item.calendar-event(data-title='Meeting', data-stick='true', data-color='red-600', href='javascript:void(0)')
+              i.wb-medium-point.red-600.margin-right-10(aria-hidden='true')
+              | Meeting
+            a.list-group-item.calendar-event(data-title='Birthday Party', data-stick='true', data-color='green-600', href='javascript:void(0)')
+              i.wb-medium-point.green-600.margin-right-10(aria-hidden='true')
+              | Birthday
+              |               Party
+            a.list-group-item.calendar-event(data-title='Call Jimba', data-stick='true', data-color='orange-600', href='javascript:void(0)')
+              i.wb-medium-point.orange-600.margin-right-10(aria-hidden='true')
+              | Call
+              |               Jimba
+            a.list-group-item.calendar-event(data-title='Dinner with Team', data-stick='true', data-color='cyan-600', href='javascript:void(0)')
+              i.wb-medium-point.cyan-600.margin-right-10(aria-hidden='true')
+              | Dinner
+              |               with Team
+            a#addNewEventBtn.list-group-item(href='javascript:void(0)')
+              i.icon.wb-plus(aria-hidden='true')
+              |  Add New Event
+    .page-main
+      .page-header
+        h1.page-title Calendar
+      .page-content.calendar-container.padding-horizontal-30.container-fluid
+        .panel
+          #calendar.padding-30
+
+        //modals go there
+
+
+
+
+
