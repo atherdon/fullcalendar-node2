@@ -105,4 +105,4 @@ For more information about using Node.js on Heroku, see these Dev Center article
 - [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
 - [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
 
-Screens at #4
+Screens at [Issue #4](https://github.com/atherdon/fullcalendar-node2/issues/4)
