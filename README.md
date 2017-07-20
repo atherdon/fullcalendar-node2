@@ -12,6 +12,10 @@ https://fullcalendar.io/js/fullcalendar-3.4.0/demos/external-dragging.html
 
 https://fullcalendar.io/js/fullcalendar-3.4.0/demos/list-views.html
 
+[FullCalendar Github Readme](https://github.com/fullcalendar/fullcalendar/blob/master/README.md)!
+
+
+
 Check out the [demo](https://google.com)!
 
 
