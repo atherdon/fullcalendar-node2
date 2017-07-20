@@ -8,10 +8,7 @@
 (function(document, window, $) {
   'use strict';
 
-  window.AppCalendar = App.extend({
-    handleFullcalendar: function() {
-
-      var my_events = [{
+        var my_events = [{
         title: 'All Day Event',
         start: '2015-10-01'
       }, {
@@ -50,6 +47,12 @@
         title: 'Birthday Party',
         start: '2015-10-13T07:00:00'
       }];
+
+
+
+  window.AppCalendar = App.extend({
+    handleFullcalendar: function() {
+
 
 
       var my_options = {
@@ -100,6 +103,7 @@
               $this.prop('checked', false);
             }
           });
+
           $('#editColor [value=' + event.backgroundColor + ']').prop('checked', true);
 
           $('#editNewEvent').modal('show').one('hidden.bs.modal', function(e) {
@@ -113,7 +117,8 @@
             event.start = new Date($('#editStarts').data('datepicker').getDate());
             event.end = new Date($('#editEnds').data('datepicker').getDate());
             $('#calendar').fullCalendar('updateEvent', event);
-          })
+          });
+
         },
         eventDragStart: function() {
           $.site.actionBtn.expand();
@@ -135,6 +140,7 @@
 
       $('#editNewEvent').modal();
       $('#calendar').fullCalendar(_options);
+
     },
 
     // handleSelective: function() {
@@ -214,6 +220,7 @@
     // },
 
     handleEventList: function() {
+
       $('#addNewEventBtn').on('click', function() {
         $('#addNewEvent').modal('show');
       });
@@ -251,6 +258,7 @@
 
       this.handleEventList();
       this.handleFullcalendar();
+      
       // this.handleAction();
       // this.handleSelective();
 
