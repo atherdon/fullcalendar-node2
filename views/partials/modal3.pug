@@ -1,0 +1,60 @@
+// AddEvent Dialog
+#addNewEvent.modal.fade(aria-hidden='true', aria-labelledby='addNewEvent', role='dialog', tabindex='-1')
+  .modal-dialog
+    form.modal-content.form-horizontal(action='#', method='post', role='form')
+      .modal-header
+        button.close(type='button', aria-hidden='true', data-dismiss='modal') ×
+        h4.modal-title New Event
+      .modal-body
+        .form-group
+          label.col-sm-2.control-label(for='ename') Name:
+          .col-sm-10
+            input#ename.form-control(type='text', name='ename')
+        .form-group
+          label.col-sm-2.control-label(for='starts') Starts:
+          .col-sm-10
+            .input-group
+              input#starts.form-control(type='text', data-container='#addNewEvent', data-plugin='datepicker')
+              span.input-group-addon
+                i.icon.wb-calendar(aria-hidden='true')
+        .form-group
+          label.col-sm-2.control-label(for='ends') Ends:
+          .col-sm-10
+            .input-group
+              input#ends.form-control(type='text', data-container='#addNewEvent', data-plugin='datepicker')
+              span.input-group-addon
+                i.icon.wb-calendar(aria-hidden='true')
+        .form-group
+          label.col-sm-2.control-label(for='repeats') Repeats:
+          .col-sm-10
+            input#repeats.form-control(type='text', name='repeats', data-plugin='TouchSpin', data-min='0', data-max='10', value='0')
+        .form-group
+          label.control-label.col-sm-2 Color:
+          .col-sm-10
+            ul.color-selector
+              li.bg-blue-600
+                input#colorChosen2(type='radio', checked='', name='colorChosen')
+                label(for='colorChosen2')
+              li.bg-green-600
+                input#colorChosen3(type='radio', name='colorChosen')
+                label(for='colorChosen3')
+              li.bg-cyan-600
+                input#colorChosen4(type='radio', name='colorChosen')
+                label(for='colorChosen4')
+              li.bg-orange-600
+                input#colorChosen5(type='radio', name='colorChosen')
+                label(for='colorChosen5')
+              li.bg-red-600
+                input#colorChosen6(type='radio', name='colorChosen')
+                label(for='colorChosen6')
+              li.bg-blue-grey-600
+                input#colorChosen7(type='radio', name='colorChosen')
+                label(for='colorChosen7')
+              li.bg-purple-600
+                input#colorChosen8(type='radio', name='colorChosen')
+                label(for='colorChosen8')
+      .modal-footer
+        .form-actions
+          button.btn.btn-primary(data-dismiss='modal', type='button') Add this event
+          a.btn.btn-sm.btn-white(data-dismiss='modal', href='javascript:void(0)') Cancel
+// End AddEvent Dialog

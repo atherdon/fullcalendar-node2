@@ -1,0 +1,19 @@
+// Add Calendar Form
+#addNewCalendarForm.modal.fade(aria-hidden='true', aria-labelledby='addNewCalendarForm', role='dialog', tabindex='-1')
+  .modal-dialog
+    form.modal-content(action='#', method='post', role='form')
+      .modal-header
+        button.close(type='button', aria-hidden='true', data-dismiss='modal') ×
+        h4.modal-title
+          | Create New Calendar
+      .modal-body
+        .form-group
+          label.control-label.margin-bottom-15(for='name') Calendar name:
+          input#name.form-control(type='text', name='name', placeholder='Calendar name')
+      .modal-footer
+        .form-actions
+          button.btn.btn-primary(data-dismiss='modal', type='button')
+            | Create
+          a.btn.btn-sm.btn-white(data-dismiss='modal', href='javascript:void(0)')
+            | Cancel
+// End Add Calendar Form

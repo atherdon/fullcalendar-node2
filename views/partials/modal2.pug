@@ -1,0 +1,64 @@
+// Edit Dialog
+#editNewEvent.modal.fade(aria-hidden='true', aria-labelledby='editNewEvent', role='dialog', tabindex='-1', data-show='false')
+  .modal-dialog
+    form.modal-content.form-horizontal(action='#', method='post', role='form')
+      .modal-header
+        button.close(type='button', aria-hidden='true', data-dismiss='modal') ×
+        h4.modal-title Edit Event
+      .modal-body
+        .form-group
+          label.col-sm-2.control-label(for='editEname') Name:
+          .col-sm-10
+            input#editEname.form-control(type='text', name='editEname')
+        .form-group
+          label.col-sm-2.control-label(for='editStarts') Starts:
+          .col-sm-10
+            .input-group
+              input#editStarts.form-control(type='text', name='editStarts', data-container='#editNewEvent', data-plugin='datepicker')
+              span.input-group-addon
+                i.icon.wb-calendar(aria-hidden='true')
+        .form-group
+          label.col-sm-2.control-label(for='editEnds') Ends:
+          .col-sm-10
+            .input-group
+              input#editEnds.form-control(type='text', data-container='#editNewEvent', data-plugin='datepicker')
+              span.input-group-addon
+                i.icon.wb-calendar(aria-hidden='true')
+        .form-group
+          label.col-sm-2.control-label(for='editRepeats') Repeats:
+          .col-sm-10
+            input#editRepeats.form-control(type='text', name='repeats', data-plugin='TouchSpin', data-min='0', data-max='10', value='0')
+        #editColor.form-group
+          label.control-label.col-sm-2 Color:
+          .col-sm-10
+            ul.color-selector
+              li.bg-blue-600
+                input#editColorChosen2(type='radio', data-color='blue|600', name='colorChosen')
+                label(for='editColorChosen2')
+              li.bg-green-600
+                input#editColorChosen3(type='radio', data-color='green|600', name='colorChosen')
+                label(for='editColorChosen3')
+              li.bg-cyan-600
+                input#editColorChosen4(type='radio', data-color='cyan|600', name='colorChosen')
+                label(for='editColorChosen4')
+              li.bg-orange-600
+                input#editColorChosen5(type='radio', data-color='orange|600', name='colorChosen')
+                label(for='editColorChosen4')
+              li.bg-red-600
+                input#editColorChosen6(type='radio', data-color='red|600', name='colorChosen')
+                label(for='editColorChosen6')
+              li.bg-blue-grey-600
+                input#editColorChosen7(type='radio', data-color='blue-grey|600', name='colorChosen')
+                label(for='editColorChosen7')
+              li.bg-purple-600
+                input#editColorChosen8(type='radio', data-color='purple|600', name='colorChosen')
+                label(for='editColorChosen8')
+      .modal-footer
+        .form-actions
+          button.btn.btn-primary(data-dismiss='modal', type='button')
+            | Save
+          button.btn.btn-danger(data-dismiss='modal', type='button')
+            | Delete
+          a.btn.btn-sm.btn-white(data-dismiss='modal', href='javascript:void(0)')
+            | Cancel
+// End EditEvent Dialog
