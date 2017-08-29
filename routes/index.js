@@ -9,6 +9,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'FullCalendar with Event Modals' });
 });
 
+router.get('/nice', function(req, res, next){
+  res.render('index1', { title: 'FullCalendar with Event Modals' });
+});
+
+
+
 router.get('/bootstrap', function(req, res, next) {
   res.render('bootstrap', { 
   	title: 'Express',
