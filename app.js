@@ -25,6 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.static(path.join(__dirname, 'public/stylesheets/template')));
 
+app.use(express.static(path.join(__dirname, 'public/javascripts/template')));
+
 app.use('/', index);
 // app.use('/users', users);
 
